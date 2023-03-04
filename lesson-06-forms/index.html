@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/normolize.css">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="lesn-contact-us-section">
+    <h3>Contact us form</h3>
+    <form action="#" method="get">
+      <div class="lesn-contact-us-form-inputs">
+        <div>
+          <label for="user_name">User name</label>
+          <input
+            id="user_name"
+            type="text"
+            name="name"
+            placeholder="Joh Anderson"
+            class="lesn-contact-us-input"
+            required
+          >
+        </div>
+        <input
+          type="email"
+          name="email"
+          placeholder="example@gmail.com"
+          class="lesn-contact-us-input"
+          required
+        >
+        <input
+          accept=".jpg"
+          type="file"
+          name="userPhoto"
+          class="lesn-contact-us-input"
+          required
+        >
+        <textarea placeholder="Type something..." class="lesn-contact-us-input" name="message" cols="30" rows="10"></textarea>
+        <select name="number" autofocus class="lesn-contact-us-input">
+          <option required disabled="disabled" selected="selected">Them of message</option>
+          <option value="1">option 1</option>
+          <option value="2">option 2</option>
+          <option value="3">option 3</option>
+          <option value="4">option 4</option>
+        </select>
+      </div>
+      <div class="lesn-form-footer">
+        <button type="reset" class="lesn-form-footer-btn">
+          Reset
+        </button>
+        <button type="submit" class="lesn-form-footer-btn">
+          Submit
+        </button>
+      </div>
+    </form>
+  </section>
+</body>
+</html>
