@@ -60,12 +60,17 @@
 .lesson-skills-list-item-rating {
   margin-top: 60px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: flex-start;
   padding: 0px;
   gap: 10px;
 }
 
-.lesson-skills-list-item-header-image {
-  
+.lesson-skills-list-item-rating-icon {
+  color: #E5E5E5;
+  transition: all .2s;
+}
+
+.lesson-skills-list-item-rating-icon:hover ~ .lesson-skills-list-item-rating-icon {
+  color: #070707;    
 }
