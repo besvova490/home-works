@@ -1,0 +1,23 @@
+.main-class {
+  position: relative;
+  color: gray;
+}
+
+.main-class::before {
+  content: attr(data-tooltip);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, .6);
+
+  width: 100%;
+  height: 100%;
+
+  transition: all .2s;
+}
+
+.main-class:hover::after {
+  opacity: 0;
+}
