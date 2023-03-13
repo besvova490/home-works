@@ -1,0 +1,21 @@
+.custom-column {
+  background-color: #faad14;
+  border: 8px solid greenyellow;
+}
+
+.container {
+  background-color: #faad14;
+  border: 8px solid greenyellow;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 300px;
+}
+
+.container-item {
+  width: 100px;
+
+  background-color: gray;
+  border: 5px solid blue;
+}

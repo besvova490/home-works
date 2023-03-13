@@ -1,0 +1,78 @@
+.page-content {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+
+  background-color: #18B5DC;
+}
+
+.page-content-main {
+  flex: 1 1 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 136px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  grid-gap: 28px;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  grid-gap: 30px;
+}
+
+.navigation__list__item a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #000000
+}
+
+.navigation__list__item.navigation__list-item_active a {
+  color: #18B5DC;
+}
+
+.header__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-transform: uppercase;
+
+  padding: 10px 20px;
+  border: 1px solid #3C3C3C;
+}
+
+
+/* traffic light */
+.traffic-light {}
+.traffic-light__lamp {}
+.traffic-light__lamp_color-red {}
+.traffic-light__lamp_color-red:hover {}
+.traffic-light__lamp_color-yellow {}
+.traffic-light__lamp_color-green {}
