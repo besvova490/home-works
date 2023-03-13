@@ -1,0 +1,77 @@
+.lesson-skills {
+  padding: 100px 50px;
+}
+
+.lesson-skills-header-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+
+  /* Black */
+
+  color: #070707;
+}
+
+.lesson-skills-header-sub-title {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  
+  color: #070707;
+}
+
+.lesson-skills-list-item-header {
+  text-align: center;
+}
+
+.lesson-skills-list {
+  margin-top: 50px;
+}
+
+.lesson-skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 48px;
+}
+
+.lesson-skills-list-item-header-text {
+  margin-top: 25px;
+
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  color: #828282;
+}
+
+.lesson-skills-list-item-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+}
+
+.lesson-skills-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 80px;
+
+  width: 170px;
+  height: 230px;
+}
