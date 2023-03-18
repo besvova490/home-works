@@ -70,8 +70,8 @@ p, h3 {
   width: max-content;
 }
 
-/* without flex with inline */
-/* .prod-header {
+/* -------------------without flex with inline---------------------- */
+.prod-header {
   width: 1200px;
   margin: 0 auto;
   padding: 26px 0;
@@ -149,11 +149,11 @@ p, h3 {
   color: #544837;
 
   margin: 25px 0;
-} */
+}
 
 
-/* with flex */
-.prod-header {
+/* ---------------------with flex------------------ */
+/* .prod-header {
   width: 1200px;
   margin: 0 auto;
   padding: 26px 0;
@@ -244,5 +244,104 @@ p, h3 {
   font-size: 18px;
   line-height: 28px;
   color: #544837;
+} */
+
+/* ---------------------with grid-------------------- */
+/* .prod-header {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 26px 0;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 12px;
+
+  justify-content: space-between;
 }
 
+.prod-header__logo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 12px;
+
+  align-items: center;
+}
+
+.prod-header__logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.prod-header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  grid-gap: 20px;
+}
+
+.prod-header__buttons {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  grid-gap: 32px;
+}
+
+.prod-header__navigation__link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #2F281E;
+}
+
+.prod-btn_type-ghost {
+  color: #2F281E;
+  border: 1px solid #BCD0E5;
+  background-color: transparent;
+}
+
+.prod-banner {
+  width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: space-between;
+
+  grid-gap: 32px;
+}
+
+.prod-banner__text {
+  width: 500px;
+
+  display: grid;
+  grid-template-columns: 100%;
+
+  grid-gap: 16px;
+}
+
+.prod-banner__text-title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2F281E;
+
+  text-align: left;
+}
+
+.prod-banner__text-sub-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #544837;
+} */
