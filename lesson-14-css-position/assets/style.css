@@ -24,68 +24,73 @@ header {
   padding: 10px;
 
   position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .parent-child {
   width: 200px;
   height: 200px;
 
-  background: linear-gradient(360deg, #241F24 0%, rgba(91, 91, 91, 0.447552) 34.11%, rgba(187, 186, 192, 0.26) 62.5%), url("https://picsum.photos/200");
+  position: relative;
 
   border: 5px solid #ffe58f;
 
   transition: all 1s;
+}
 
+.parent-child-actions {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  padding: 5px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  opacity: 0;
+  transition: all .2s ease;
+}
+
+.parent-child-actions-icon {
+  width: 32px;
+  height: 32px;
+  background-color: gray;
+  border-radius: 4px;
+}
+
+.parent-child::after {
+  content: " ";
+  display: block;
   position: relative;
-  z-index: 2;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #fff 100%);
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+
+  transition: all .2s;
 }
 
-.parent-child:hover {
-  background: url("https://picsum.photos/200");
-}
+.parent-child:hover::after { opacity: 0; }
 
-.parent-child:hover .controls {
-  opacity: .5;
-}
-
-.parent-child:hover .controls:hover {
-  opacity: 1;
-}
+.parent-child:hover .parent-child-actions { opacity: .5; }
+.parent-child:hover .parent-child-actions:hover { opacity: 1; }
 
 .controls {
   opacity: 0;
 }
 
-img {
-  position: absolute;
-  z-index: 1;
+.parent-child-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/* .parent-child-wrapper:hover .parent-child {
-  -moz-transform: scale(-1, 1);
-  -webkit-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  transform: scale(-1, 1);
-  /* transform-origin: top left; */
-
-/* .parent-child:hover {
-  transform: skew(45deg);
-  transform-origin: top left;
-} */
-
-
-p {
-  z-index: 1;
-  position: relative;
-}
-
-
-p:hover {
-
 }
 
 button {
