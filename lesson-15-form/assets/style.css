@@ -1,0 +1,190 @@
+body {
+  background: #F3F4F6;
+}
+
+.auth-container {
+  font-family: 'Inter', sans-serif;
+
+  max-width: 436px;
+  margin: 32px auto;
+  padding: 16px;
+
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 2px rgba(31, 41, 55, 0.08);
+}
+
+.auth-form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.auth-container-title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #374151;
+}
+
+.auth-input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  width: 100%;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #374151;
+}
+
+.auth-input.auth-input_with-error .auth-input-label { color: #EF4444; }
+
+.auth-input.auth-input_with-error .auth-input-inner {
+  border: 1px solid #E11D48;
+  box-shadow: 0px 0px 0px 3px rgb(255, 228, 230);
+}
+
+.auth-input-inner {
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 1px 2px rgba(31, 41, 55, 0.08);
+  border-radius: 4px;
+
+  width: 100%;
+  padding: 8px;
+}
+
+
+.auth-input-inner:hover {
+  border: 1px solid rgb(156, 163, 175);
+  box-shadow: 0px 0px 0px 3px rgb(229, 231, 235);
+}
+
+.auth-input-inner:focus,
+.auth-input-inner:active {
+  border: 1px solid rgb(19, 181, 172);
+  box-shadow: 0px 0px 0px 3px rgb(231, 248, 247);
+}
+
+.auth-input-inner::placeholder {
+  color: #D1D5DB;
+}
+
+.auth-input-label {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B7280;
+}
+
+.auth-input-error {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #EF4444;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 4px;
+}
+
+.auth-input-error svg {
+  width: 20px;
+  height: 20px;
+}
+
+.auth-button {
+  padding: 8px 16px;
+  width: max-content;
+  
+  color: #FFF;
+  text-align: center;
+  font-family: inherit;
+  
+  background-color: #13B5AC;
+  box-shadow: 0px 1px 2px rgba(31, 41, 55, 0.08);
+  border-radius: 4px;
+
+  margin-left: auto;
+}
+
+.auth-button.auth-button_full-width { width: 100%; }
+
+
+
+.auth-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.auth-checkbox:has(.auth-checkbox-input:checked)::before {
+  background-color: #13B5AC;
+  border: 1px solid rgba(19, 181, 172, 0.6);
+}
+
+.auth-checkbox::before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+
+  background: #FFFFFF;
+  border: 1px solid #D1D5DB;
+  box-shadow: 0px 1px 2px rgba(31, 41, 55, 0.08);
+  border-radius: 4px;
+
+  transition: all .2s;
+}
+
+.auth-checkbox:hover::before { border-color: rgba(19, 181, 172, 0.6); }
+
+.auth-checkbox-input {
+  opacity: 0;
+  
+  position: absolute;
+  
+  width: 0;
+  height: 0;
+}
+
+.auth-checkbox-inner {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #374151;
+}
+
+.auth-checkbox-inner-icon {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  color: #FFFFFF;
+}
+
+.auth-checkbox-inner-icon svg {
+  width: 100%;
+  height: 100%;
+}

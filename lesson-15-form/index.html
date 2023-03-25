@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap">
+  
+  <!-- custom imports -->
+  <link rel="stylesheet" href="./assets/normalize.css">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <form action="" method="" class="auth-form">
+      <h1 class="auth-container-title">
+        Log In
+      </h1>
+      <div class="auth-input">
+        <label for="input-email" class="auth-input-label">Email Address*</label>
+        <input id="input-email" type="email" placeholder="example@gmail.com" class="auth-input-inner" required/>
+      </div>
+      <div class="auth-input auth-input_with-error">
+        <label for="input-password" class="auth-input-label">Password*</label>
+        <input id="input-password" type="password" placeholder="Your password" class="auth-input-inner" required/>
+        <span class="auth-input-error">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M228.9 79.9L51.8 403.1C40.6 423.3 55.5 448 78.9 448h354.3c23.3 0 38.2-24.7 27.1-44.9L283.1 79.9c-11.7-21.2-42.5-21.2-54.2 0zM273.6 214L270 336h-28l-3.6-122h35.2zM256 402.4c-10.7 0-19.1-8.1-19.1-18.4s8.4-18.4 19.1-18.4 19.1 8.1 19.1 18.4-8.4 18.4-19.1 18.4z"></path>
+          </svg>
+          Old password is required!
+        </span>
+      </div>
+      <label for="rememberMeCheckbox" class="auth-checkbox" tabindex="1">
+        <input id="rememberMeCheckbox" type="checkbox" name="rememberMe" class="auth-checkbox-input"/>
+        <span class="auth-checkbox-inner-icon">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 20 20" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+          </svg>
+        </span>
+        <span class="auth-checkbox-inner">
+          Remember Me
+        </span>
+      </label>
+      <button type="submit" class="auth-button">Log In</button>
+    </form>
+  </div>
+</body>
+</html>

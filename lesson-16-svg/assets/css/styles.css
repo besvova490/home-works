@@ -73,3 +73,23 @@
 .product-container__actions__item:hover {
   color: red;
 }
+
+.icon-container {
+  margin: 40px;
+}
+
+.icon-container-path {
+  fill: #D1E7FF;
+}
+
+.icon-container-path-fill {
+  fill: #B9DCFF;
+}
+
+.icon-container:hover .icon-container-path-fill {
+  fill: green;
+}
+
+.icon-container:hover .icon-container-path {
+  fill: #F4FEFF;
+}
