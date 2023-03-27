@@ -1,0 +1,14 @@
+@mixin with-text-decoration($color) {
+  text-decoration: none;
+  color: green;
+
+  &:hover {
+    color: $color;
+    text-decoration: underline;
+  }
+}
+
+
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
