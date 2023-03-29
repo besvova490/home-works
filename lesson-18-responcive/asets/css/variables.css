@@ -1,0 +1,13 @@
+:root {
+  --primary-color-500: #ff85c0;
+  --secondary-color-500: #85a5ff;
+  --tertiary-color-500: #95de64;
+
+  /* breakpoint width */
+  --media-size-xs: '480px';
+  --media-size-sm: '576px';
+  --media-size-md: '768px';
+  --media-size-lg: '992px';
+  --media-size-xl: '1200px';
+  --media-size-xxl: '1600px';
+}
