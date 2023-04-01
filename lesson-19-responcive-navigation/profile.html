@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <div class="page-content">
+      <header class="page-content__header">
+        <div class="logo">
+          <img
+            src="./assets/images/website-logo.png"
+            alt="website-logo"
+            class="logo-image"
+          />
+          <span class="logo__description">Productly</span>
+        </div>
+        <nav class="navigation hide-mobile">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="./index.html"
+                >Account</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="./pages/profile.html"
+                >Profile</a
+              >
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="">Pricing</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-controls hide-mobile">
+          <button type="button" class="button button_secondary">Sign In</button>
+          <button type="button" class="button">Sign Up</button>
+        </div>
+
+        <div class="burger-control">
+          <div class="hamburger hamburger--squeeze js-hamburger">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
+          </div>
+          <nav class="navigation navigation-mobile">
+            <ul class="navigation__list">
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link" href="./index.html"
+                  >Account</a
+                >
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link" href="./profile.html"
+                  >Profile</a
+                >
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link" href="">Pricing</a>
+              </li>
+              <li class="navigation__list-item">
+                <a class="navigation__list-item-link" href="">Resources</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="page-content__main">
+        <form class="page-form">
+          <h1 class="page-form-title full-width">Create an Account</h1>
+          <div class="full-width page-form-avatar">
+            <div class="page-form-avatar-inner">
+              <img src="https://picsum.photos/200" alt="" />
+            </div>
+            <div class="page-form-avatar-controls">
+              <div class="page-form-avatar-controls-upload">
+                <div class="page-form-avatar-controls-upload-input">
+                  <input
+                    class="page-form-avatar-controls-upload-input-tag"
+                    type="file"
+                    accept=".jpg"
+                  />
+                  <svg
+                    class="page-form-avatar-controls-upload-icon"
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path
+                      d="M3 4V1h2v3h3v2H5v3H3V6H0V4h3zm3 6V7h3V4h7l1.83 2H21c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V10h3zm7 9c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-3.2-5c0 1.77 1.43 3.2 3.2 3.2s3.2-1.43 3.2-3.2-1.43-3.2-3.2-3.2-3.2 1.43-3.2 3.2z"
+                    ></path>
+                  </svg>
+                </div>
+                <span>Up to 1 MB (300x300 px)</span>
+              </div>
+              <button class="page-form-avatar-controls-delte">
+                <svg
+                  class="page-form-avatar-controls-delte-icon"
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 1024 1024"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M864 256H736v-80c0-35.3-28.7-64-64-64H352c-35.3 0-64 28.7-64 64v80H160c-17.7 0-32 14.3-32 32v32c0 4.4 3.6 8 8 8h60.4l24.7 523c1.6 34.1 29.8 61 63.9 61h454c34.2 0 62.3-26.8 63.9-61l24.7-523H888c4.4 0 8-3.6 8-8v-32c0-17.7-14.3-32-32-32zm-200 0H360v-72h304v72z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="page-form-input">
+            <label class="page-form-input-label">First Name</label>
+            <input
+              class="page-form-input-inner"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="page-form-input">
+            <label class="page-form-input-label">First Name</label>
+            <input
+              class="page-form-input-inner"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="page-form-input">
+            <label class="page-form-input-label">First Name</label>
+            <input
+              class="page-form-input-inner"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="page-form-input">
+            <label class="page-form-input-label">First Name</label>
+            <input
+              class="page-form-input-inner"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="page-form-select-container">
+            <div class="page-form-select">
+              <label class="page-form-input-label">First Name</label>
+              <select name="select" class="page-form-select-inner">
+                <option value="value1">Значение 1</option>
+                <option value="value2" selected>Значение 2</option>
+                <option value="value3">Значение 3</option>
+              </select>
+            </div>
+            <img
+              src="./assets/images/select-arrow.png"
+              alt="select-arrow"
+              class="page-form-select-arrows"
+            />
+          </div>
+          <div class="page-form-input">
+            <label class="page-form-input-label">First Name</label>
+            <input
+              class="page-form-input-inner"
+              type="text"
+              placeholder="First Name"
+            />
+          </div>
+          <button class="from-button">Sign Up</button>
+        </form>
+      </main>
+      <footer class="page-content__footer"></footer>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+<body>
+  <div class="page-content">
+    <header class="page-content__header">
+      <div class="logo">
+        <img src="./assets/images/website-logo.png" alt="website-logo" class="logo-image"/>
+        <span class="logo__description">Productly</span>
+      </div>
+      <nav class="navigation hide-mobile">
+        <ul class="navigation__list">
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="./index.html">Account</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="./pages/profile.html">Profile</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="">Pricing</a>
+          </li>
+          <li class="navigation__list-item">
+            <a class="navigation__list-item-link" href="">Resources</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-controls hide-mobile">
+        <button type="button" class="button button_secondary">Sign In</button>
+        <button type="button" class="button">Sign Up</button>
+      </div>
+
+      <div class="burger-control">
+        <div class="hamburger hamburger--squeeze js-hamburger">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+        <nav class="navigation navigation-mobile">
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="./index.html">Account</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="./profile.html">Profile</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="">Pricing</a>
+            </li>
+            <li class="navigation__list-item">
+              <a class="navigation__list-item-link" href="">Resources</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-content__main">
+      <form class="page-form">
+        <h1 class="page-form-title full-width">Create an Account</h1>
+        <div class="page-form-input">
+          <label class="page-form-input-label">First Name</label>
+          <input class="page-form-input-inner" type="text" placeholder="First Name">
+        </div>
+        <div class="page-form-input">
+          <label class="page-form-input-label">First Name</label>
+          <input class="page-form-input-inner" type="text" placeholder="First Name">
+        </div>
+        <div class="page-form-input full-width">
+          <label class="page-form-input-label">First Name</label>
+          <input class="page-form-input-inner" type="text" placeholder="First Name">
+          <span class="page-form-input-hint">We'll never share your email with anyone else.</span>
+        </div>
+        <div class="full-width page-form-input-radio-group">
+          <label class="page-form-input-radio">
+            <input type="radio" class="page-form-input-radio-input" name="sex" value="male">
+            <span class="page-form-input-radio-inner"></span>
+            <span class="page-form-input-radio-label">Male</span>
+          </label>
+          <label class="page-form-input-radio">
+            <input type="radio" class="page-form-input-radio-input" name="sex" value="female">
+            <span class="page-form-input-radio-inner"></span>
+            <span class="page-form-input-radio-label">Female</span>
+          </label>
+        </div>
+        <div class="page-form-select-container">
+          <div class="page-form-select">
+<label class="page-form-input-label">First Name</label>
+            <select name="select" class="page-form-select-inner">
+              <option value="value1">Значение 1</option>
+              <option value="value2" selected>Значение 2</option>
+              <option value="value3">Значение 3</option>
+            </select>
+          </div>
+          <img src="./assets/images/select-arrow.png" alt="select-arrow" class="page-form-select-arrows"/>
+        </div>
+        <div class="page-form-input">
+          <label class="page-form-input-label">First Name</label>
+          <input class="page-form-input-inner" type="text" placeholder="First Name">
+        </div>
+        <button  class="full-width from-button">
+          Sign Up
+        </button>
+      </form>
+    </main>
+    <footer class="page-content__footer">
+
+    </footer>
+  </div>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>
