@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./images/styles.css">
+</head>
+<body>
+  <!-- <img
+    alt="A description of the image."
+    loading="lazy"
+    decoding="async"
+    src="https://picsum.photos/seed/picsum/200/300"
+    srcset="https://picsum.photos/seed/picsum/1200/700 2x"
+  /> -->
+    <!-- <img 
+      src="https://picsum.photos/seed/picsum/1200/700"
+      alt="Baby Sleeping"
+    /> -->
+    <!-- <img src="https://picsum.photos/seed/picsum/1200/700" alt=""> -->
+    <!-- <img
+      width="1200"
+      height="1200"
+      loading="lazy"
+      src="./images/Large-Sample-Image-download-for-Testing.jpg"
+      alt="large image"
+    /> -->
+    <picture>
+      <!-- <source srcset="https://picsum.photos/seed/picsum/1200/700?key1" media="(min-width: 1440px)"> -->
+      <!-- <source srcset="https://picsum.photos/seed/picsum/1200/700?key2" media="(min-width: 800px)"> -->
+      <source src="https://picsum.photos/seed/picsum/1200/700?key3 3x" type="image/png" media="(max-width: 800px)">
+      <img src="./images/Large-Sample-Image-download-for-Testing.jpg" alt=“”>
+      </picture>
+    <div class="test-image">
+      <!-- <img src="https://picsum.photos/seed/picsum/1200/700" alt=""> -->
+    </div>
+</body>
+</html>
