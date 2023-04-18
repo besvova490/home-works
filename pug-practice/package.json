@@ -1,0 +1,15 @@
+{
+  "name": "pug-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "pug -w index.pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}

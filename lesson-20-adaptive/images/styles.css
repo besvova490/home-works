@@ -1,9 +1,9 @@
-.test-image {
+/* .test-image {
   max-width: 400px;
   height: 400px;
 
   overflow: hidden;
-}
+} */
 
 img {
   object-fit: cover;
