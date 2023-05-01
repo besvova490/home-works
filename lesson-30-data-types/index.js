@@ -231,4 +231,3 @@ const fruits = ["apple", "banana", "blueberry", "orange"];
 const [...otherArray] = fruits;
 
 console.log(otherArray, fruits);
-

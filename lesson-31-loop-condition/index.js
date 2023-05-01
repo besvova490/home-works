@@ -330,3 +330,30 @@ const PERSON = {
 // do {
 
 // } while (weekend);
+
+// const days = ["m", "t", "w", "th", "f", "s", "s"];
+// let week = true;
+
+// // for(let i = 0; i < days.length; i++){
+// //   if (confirm(days[i])) {
+// //     break
+// //   }
+// // };
+
+// let dayIndex = 0;
+
+// do {
+//   week = confirm(days[dayIndex]);
+
+//   if (dayIndex < days.length - 1) {
+//     ++dayIndex;
+//   } else {
+//     dayIndex = 0;
+//   }
+// } while (week);
+
+// console.log('Все');
+
+
+const userName = prompt("Name");
+console.log(userName);
