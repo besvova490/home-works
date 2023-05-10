@@ -113,3 +113,17 @@ const totalSum = (items) => {
 }
 
 console.log(totalSum(itemsList));
+
+const time = {
+  time: new Date(),
+  get showTime() {
+    console.log(`${this.time.getHours()}:${this.time.getMinutes()}:${this.time.getSeconds()}`)
+  },
+  addSeconds (secondsAmount) {
+    this.time.setSeconds(+this.time.getSeconds() + secondsAmount);
+  },
+};
+
+time.showTime;
+time.addSeconds(120);
+time.showTime;
