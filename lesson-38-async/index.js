@@ -89,7 +89,7 @@ const addProducts = (item) => {
 }
 
 const getProductsByAxios = async () => {
-  const resp = await axios.get(`${BASE_URL}/products`);
+  const resp = await axios.get(`http://www.omdbapi.com/?apikey=683235d&s=${userInoput}&type=series&page=2&order=-date`);
   const respItem = await axios.get(`${BASE_URL}/products/21`);
 
   console.log(respItem);

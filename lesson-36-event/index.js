@@ -87,3 +87,26 @@ otherButton.addEventListener("click", onClick);
 
 // document.querySelector(".lsn-form").addEventListener("submit", displayFormValues);
 // document.querySelector(".lsn-form-second").addEventListener("submit", displayFormValues);
+
+
+const resizableDiv = document.querySelector(".lns-div-resize");
+let isDivFocus = false
+
+resizableDiv.addEventListener("mousedown", () => {
+  isDivFocus = true;
+});
+
+window.addEventListener("mouseup", () => {
+  isDivFocus = false;
+});
+
+window.addEventListener("mousemove", (event) => {
+  if (isDivFocus) {
+    const newCalculatedSize = event.x / 100;
+    const newDivSize = event.movementX >= 0 ? newCalculatedSize : newCalculatedSize * -1;
+
+    // check direction and decries or incise block size
+    const newDivSizeToSet = +resizableDiv.offsetWidth + newDivSize;
+    resizableDiv.style.width = `${newDivSizeToSet}px`;
+  }
+});
